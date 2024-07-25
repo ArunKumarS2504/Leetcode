@@ -4,8 +4,7 @@ import java.io.*;
 
 class MaxElemnet
 {
-	public static void main (String[] args) throws java.lang.Exception
-	{
+	public static void main (String[] args) {
 		// your code goes here
         Scanner s = new Scanner(System.in);
         int N = s.nextInt();
