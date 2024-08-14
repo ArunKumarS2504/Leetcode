@@ -17,7 +17,7 @@
     }
 
     public static void main(String[] args) {
-        String Str = "racecar";
+        String Str = "raceegcar";
         Str.toLowerCase();
         Boolean A = isPalindrome(Str);
         System.out.println(A);
