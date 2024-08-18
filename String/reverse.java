@@ -1,16 +1,24 @@
- class reverse {
-    
-       
 
-    public static void main(String[] args) {
-        
-        String Str1 = "Arun Kumar";
-        String Rev = "";
-        for(int i=Str1.length()-1;i<0;i--){
+// input = the bird is flying
+// output = flying is bird the
 
-            Rev = Rev.Str1.charAt(i);
+class reverse {
 
-
+        public String Reverese(String s){
+            StringBuilder reversed = new StringBuilder();
+            int j = s.length();
+             for(int i=s.length()-1;i>=0;i--){
+                if(s.charAt(i)= ' '){
+                    j++;
+                }else{
+                    
+                }
+             }
+            
         }
+        
+      public static void main(String[] args) {
+        
+       
     }
 }

@@ -3,7 +3,6 @@ class SearchElement
 {
 	public static void main (String[] args) 
 	{
-		// your code goes here
 		
 		Scanner s = new Scanner(System.in);
 		int A=s.nextInt();
