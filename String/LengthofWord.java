@@ -14,6 +14,11 @@ class LengthofWord {
     public static void main(String[] args) {
         String s = "Heelo world";
 
-        
+        LengthofWord lt = new LengthofWord();
+
+        int num = lt.LengthofLastWord(s);
+        System.out.println(num);
+
+
     }
 }
