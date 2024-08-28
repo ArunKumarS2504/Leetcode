@@ -20,7 +20,7 @@
        String needle = "code";
 
         OcuranceString28 str = new OcuranceString28();
-      int s = str.Strstr(haystack, needle)
+      int s = str.Strstr(haystack, needle);
 
       System.out.println(s);
         
