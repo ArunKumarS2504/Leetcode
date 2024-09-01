@@ -20,4 +20,28 @@ class reverseDigit {
 
         return reversed;
     }
+    public class Main {
+        public static void main(String[] args) {
+            reverseDigit rev = new reverseDigit();
+    
+            // Test cases
+            int num1 = 123;
+            System.out.println("Input: " + num1 + ", Reversed: " + rev.reverse(num1)); // Expected Output: 321
+    
+            int num2 = -123;
+            System.out.println("Input: " + num2 + ", Reversed: " + rev.reverse(num2)); // Expected Output: -321
+    
+            int num3 = 120;
+            System.out.println("Input: " + num3 + ", Reversed: " + rev.reverse(num3)); // Expected Output: 21
+    
+            int num4 = 0;
+            System.out.println("Input: " + num4 + ", Reversed: " + rev.reverse(num4)); // Expected Output: 0
+    
+            int num5 = 1534236469; // This case will test overflow
+            System.out.println("Input: " + num5 + ", Reversed: " + rev.reverse(num5)); // Expected Output: 0
+    
+            int num6 = -2147483648; // This case will test underflow
+            System.out.println("Input: " + num6 + ", Reversed: " + rev.reverse(num6)); // Expected Output: 0
+        }
+    }
 }
