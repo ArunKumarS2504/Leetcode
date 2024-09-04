@@ -33,6 +33,26 @@ public class Queue {
         return rear == MAX_VALUE - 1;
     }    
 
+      // Method to get the front element of the queue without removing it
+      public int peek() {
+        if (isEmpty())
+            throw new IndexOutOfBoundsException("Queue is empty");
+        return arr[front];
+    }
+
+    // Method to display the elements of the queue
+    public void display() {
+        if (isEmpty()) {
+            System.out.println("Queue is empty");
+            return;
+        }
+        System.out.print("Queue elements: ");
+        for (int i = front; i <= rear; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
     public static void main(String[] args) {
         
         Queue q = new Queue();
