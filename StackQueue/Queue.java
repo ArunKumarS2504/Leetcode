@@ -62,7 +62,19 @@ public class Queue {
         q.enqueue(5);
         q.enqueue(6);
 
-        System.out.println("Dequeued item :"+q.dequeue());
+        System.out.println("Dequeued item: " + q.dequeue());
+        q.display();
 
+        System.out.println("Peek item: " + q.peek());
+        System.out.println("Is queue empty? " + q.isEmpty());
+        System.out.println("Is queue full? " + q.isFull());
+
+        // Additional enqueue and dequeue to demonstrate all operations
+        q.enqueue(7);
+        q.enqueue(8);
+        q.display();
+
+        System.out.println("Dequeued item: " + q.dequeue());
+        q.display();
     }
 }
