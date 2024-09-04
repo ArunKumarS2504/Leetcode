@@ -23,6 +23,16 @@ public class Queue {
             throw new IndexOutOfBoundsException("Queue is Empty");
         return arr[front++];
     }
+
+    public boolean isEmpty() {
+        return front == -1 || front > rear;
+    }
+
+    // Method to check if the queue is full
+    public boolean isFull() {
+        return rear == MAX_VALUE - 1;
+    }    
+
     public static void main(String[] args) {
         
         Queue q = new Queue();
